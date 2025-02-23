@@ -9,26 +9,33 @@
 
 
 header {
-    padding-top: 30px;
+    padding: 30px 30px 10px 20px;
     background-color: white;
 }
 
 
-nav {
+.wrapper {
     display: flex;
     justify-content: space-around;
+    text-align: center;
     align-items: center;
     gap: 7em;
 }
 
+.content-wrapper {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
 .header-logo {
-    width: 150px;
+    width: 140px;
 }
 
 
 .menu-list-wrap {
     display: flex;
-    gap: 1.5em;
+    gap: 1.4em;
 }
 
 .about-us a {
@@ -434,19 +441,22 @@ nav {
     width: 9.5px;
 }
 
-.Calculator{
+.Calculator {
     position: relative;
 }
-.Calculator-a{
+
+.Calculator-a {
     font-size: 16px;
     font-weight: 400;
     font-family: Inter, sans-serif;
     color: black;
 }
-.Calculator:hover .Calculator2{
+
+.Calculator:hover .Calculator2 {
     display: block;
 }
-.Calculator2{
+
+.Calculator2 {
     position: absolute;
     width: 310px;
     height: 160px;
@@ -458,13 +468,16 @@ nav {
     border-radius: 5px;
     display: none;
 }
-.dropdown-content7{
+
+.dropdown-content7 {
     position: relative;
 }
-.dropdown-content7:hover .savingcalculator-dropdown{
+
+.dropdown-content7:hover .savingcalculator-dropdown {
     display: block;
 }
-.savingcalculator-dropdown{
+
+.savingcalculator-dropdown {
     position: absolute;
     width: 270px;
     height: 160px;
@@ -475,4 +488,489 @@ nav {
     box-shadow: 2px 2px 2px 2.5px rgba(74, 72, 72, 0.118);
     border-radius: 5px;
     display: none;
+}
+
+button {
+    padding: 10px 30px;
+    background-color: black;
+    border-radius: 10px;
+
+}
+
+button a {
+    color: white;
+}
+
+.select-items {
+    padding: 6px 2px;
+}
+
+.menu-bar {
+    background-color: white;
+    padding: 20px;
+    display: none;
+}
+
+.fa-solid {
+    font-size: 29px;
+}
+
+@media(max-width:1055px) {
+    .content-wrapper {
+        display: flex;
+        gap: .5em;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:991px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .content-wrapper {
+        display: none !important;
+    }
+
+    .menu-bar {
+        display: block !important;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        gap: 6em;
+    }
+}
+
+.hero-section {
+    padding: 20px 120px;
+    position: relative;
+    background-color: white;
+    z-index: 10;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 620px;
+    padding: 20px;
+    background-color: #EBF1FD;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    z-index: 10;
+    background-image: url(./images/flag-of\ nigeria.svg);
+    background-repeat: repeat-x;
+    background-size: 74.5px;
+    background-position: bottom;
+}
+
+.phone1 {
+    position: absolute;
+    top: 330px;
+    transform: rotate(30deg);
+    left: -60px;
+    z-index: 1;
+}
+
+.phone2 {
+    object-fit: contain;
+    position: absolute;
+    top: 50px;
+    bottom: 0%;
+    left: auto;
+    right: -180px;
+    transform: rotate(5deg);
+}
+
+.text-wrapper h1 {
+    font-size: 45px;
+    font-weight: 700;
+    font-family: Inter, sans-serif;
+    margin-bottom: 20px;
+    line-height: 54px;
+}
+
+.text-wrapper p {
+    font-size: 18px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    color: #404B65;
+    margin-bottom: 20px;
+    line-height: 30.0001px;
+}
+
+.verification-section {
+    padding: 20px 120px;
+    background-color: white;
+}
+
+.section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 4em;
+}
+
+.flex-content1 {
+    display: flex;
+    gap: 2em;
+}
+
+.cbn-wrapper p {
+    font-size: 10px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    color: #283655;
+    line-height: 10px;
+    margin-bottom: 7px;
+}
+
+.cbn-flex {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+
+.protection-box {
+    background-color: #EBF6F1;
+    padding: 8.5px 17.5px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.ndic-wrapper p {
+    font-size: 10px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    color: #283655;
+    line-height: 10px;
+    margin-bottom: 7px;
+}
+
+.ndic-flex {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+
+.scan-box {
+    padding: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(57, 55, 55, 0.203);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.scan-box p {
+    font-size: 13px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    line-height: 17px;
+    color: #727272;
+}
+
+@media(max-width:1186px) {
+    .phone1 {
+        position: absolute;
+        top: 320px;
+        transform: rotate(30deg);
+        left: -45px;
+        z-index: 1;
+        width: 200px;
+    }
+
+    .hero-section {
+        padding: 20px 90px;
+        position: relative;
+        background-color: white;
+        z-index: 10;
+    }
+}
+
+@media(max-width:1034px) {
+    .phone1 {
+        position: absolute;
+        top: 320px;
+        transform: rotate(30deg);
+        left: -45px;
+        z-index: 1;
+        width: 200px;
+    }
+
+    .hero-section {
+        padding: 20px 70px;
+        position: relative;
+        background-color: white;
+        z-index: 10;
+    }
+
+    .verification-section {
+        padding: 20px 90px;
+        background-color: white;
+    }
+}
+
+@media(max-width:990px) {
+    .phone1 {
+        position: absolute;
+        top: 369px;
+        transform: rotate(30deg);
+        left: -60px;
+        z-index: 1;
+        width: 170px;
+    }
+
+    .hero-section {
+        padding: 20px 50px;
+        position: relative;
+        background-color: white;
+        z-index: 10;
+    }
+
+    .verification-section {
+        padding: 20px 50px;
+        background-color: white;
+    }
+
+    .scan-box p {
+        font-size: 10px;
+        font-family: Inter, sans-serif;
+        font-weight: 400;
+        line-height: 17px;
+        color: #727272;
+    }
+}
+
+@media(max-width:824px) {
+    .flex-content1 {
+        flex-direction: column;
+        gap: 2em;
+    }
+}
+
+@media(max-width:810px) {
+    .phone1 {
+        position: absolute;
+        top: 387px;
+        transform: rotate(30deg);
+        left: -60px;
+        z-index: 1;
+        width: 160px;
+    }
+
+    .phone2 {
+        object-fit: contain;
+        position: absolute;
+        top: 40px;
+        bottom: 0%;
+        left: auto;
+        right: -130px;
+        transform: rotate(5deg);
+        width: 240px;
+    }
+}
+
+@media(max-width:767px) {
+    .phone1 {
+        display: none !important;
+    }
+
+    .phone2 {
+        display: none !important;
+    }
+
+    .text-wrapper h1 {
+        font-size: 24px;
+        font-weight: 600;
+        font-family: Inter, sans-serif;
+        margin-bottom: 20px;
+        line-height: 30px;
+    }
+
+    .text-wrapper p {
+        font-size: 18px;
+        font-family: Inter, sans-serif;
+        font-weight: 400;
+        color: #404B65;
+        margin-bottom: 20px;
+        line-height: 30.0001px;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        height: 470px;
+    }
+
+    .hero-section {
+        padding: 20px 40px;
+        position: relative;
+        background-color: white;
+        z-index: 10;
+    }
+
+    .verification-section {
+        padding: 20px 40px;
+        background-color: white;
+    }
+
+    .flex-content1 {
+        display: flex;
+        flex-direction: unset;
+        gap: 2em;
+    }
+
+    .section-wrapper {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .scan-box {
+        background-color: white;
+        box-shadow: 1px 1px 1px 1px rgba(57, 55, 55, 0.203);
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+        width: 300px;
+    }
+}
+
+@media(max-width:590px) {
+    .text-wrapper h1 {
+        font-size: 23px;
+        font-weight: 700;
+        font-family: Inter, sans-serif;
+        margin-bottom: 10px;
+        line-height: 30px;
+    }
+
+    .text-wrapper p {
+        font-size: 14px;
+        font-family: Inter, sans-serif;
+        font-weight: 400;
+        color: #404B65;
+        margin-bottom: 10px;
+        line-height: 20px;
+    }
+}
+
+@media(max-width:447px) {
+    .flex-content1 {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        height: 500px;
+    }
+
+    .scan-box {
+        background-color: white;
+        box-shadow: 1px 1px 1px 1px rgba(57, 55, 55, 0.203);
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+        width: 250px;
+        padding: 10px;
+    }
+
+    .hero-section {
+        padding: 20px 10px;
+        padding-right: 10px;
+        position: relative;
+        background-color: white;
+        z-index: 10;
+    }
+
+    .verification-section {
+        padding: 20px 20px;
+        background-color: white;
+    }
+}
+
+.third-section {
+    background-color: #8F69B9;
+    padding: 50px 20px;
+
+}
+
+.grid-box {
+    background-color: pink;
+    border-radius: 20px;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+}
+
+.box-2 {
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-image: url(./images/purple\ mark.svg);
+    background-color: #f4f1f8;
+    background-position: 100% 100%;
+    background-size: 40%;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    width: 90%;
+    height: 280px;
+    background-repeat: no-repeat;
+}
+
+.box-2 h1 {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+    margin-bottom: 100px;
+}
+
+.flex-wrap h1 {
+    font-size: 75px;
+    font-weight: 700;
+    font-family: Inter, sans-serif;
+    margin-bottom: 0px;
+}
+
+.flex-wrap p {
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.box-3{
+    background-color: #f1f7f6;
+    background-image: url(./images/green\ mark.svg);
+    /* background-position: 50% 0; */
+    background-size: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 280px;
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+.box-3 p{
+font-family: Inter, sans-serif;
+font-size: 16px;
+font-weight: 400;
+margin-bottom: 10px;
+}
+.box-3 h1{
 }
