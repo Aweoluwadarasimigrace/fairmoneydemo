@@ -75,6 +75,7 @@ header {
     top: 20px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.166);
     display: none;
+    z-index: 1;
 }
 
 .a1 {
@@ -352,6 +353,7 @@ header {
     border-radius: 5px;
     box-shadow: 2px 2px 2px 2px rgba(85, 78, 78, 0.144);
     display: none;
+    z-index: 1;
 }
 
 .dropdown-content2:hover .lending-dropdown {
@@ -462,11 +464,12 @@ header {
     height: 160px;
     background-color: white;
     padding: 30px;
-    top: 20px;
+    top: 21px;
     left: -90px;
     box-shadow: 2px 2px 2px 2.5px rgba(74, 72, 72, 0.118);
     border-radius: 5px;
     display: none;
+    z-index: 1;
 }
 
 .dropdown-content7 {
@@ -483,21 +486,21 @@ header {
     height: 160px;
     background-color: white;
     padding: 30px;
-    top: -30px;
+    top: -27px;
     left: 290px;
     box-shadow: 2px 2px 2px 2.5px rgba(74, 72, 72, 0.118);
     border-radius: 5px;
     display: none;
 }
 
-button {
+.btn-wrapper button {
     padding: 10px 30px;
     background-color: black;
     border-radius: 10px;
 
 }
 
-button a {
+.btn-wrapper button a {
     color: white;
 }
 
@@ -527,6 +530,8 @@ button a {
 @media(max-width:991px) {
     header {
         padding: 10px 20px;
+        width: 100%;
+        background-color: white;
     }
 
     .content-wrapper {
@@ -546,11 +551,11 @@ button a {
     }
 }
 
+
 .hero-section {
     padding: 20px 120px;
     position: relative;
     background-color: white;
-    z-index: 10;
 }
 
 .container {
@@ -565,7 +570,6 @@ button a {
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    z-index: 10;
     background-image: url(./images/flag-of\ nigeria.svg);
     background-repeat: repeat-x;
     background-size: 74.5px;
@@ -815,7 +819,6 @@ button a {
         padding: 20px 40px;
         position: relative;
         background-color: white;
-        z-index: 10;
     }
 
     .verification-section {
@@ -1352,4 +1355,474 @@ margin-bottom: 10px;
                 font-weight: 400;
                 margin-bottom: 7px;
                 }
+}
+
+.scroll-box-wrapper{
+    padding: 0px 35px;
+    background-color: white;
+}
+.scroll-box-container{
+    background-color: #EBF1FD;
+    padding: 100px 30px;
+}
+.scroll-box-wrap{
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    display: flex;
+    gap: 2em;
+    width: 100%;
+     max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+}
+.scroll-box-header{
+    text-align: center;
+    padding: 10px;
+    /* border: 2px solid black; */
+    width: 500px;
+    margin: auto;
+    font-family: Inter, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 90px;
+}
+.scroll-box1{
+    padding: 50px 40px;
+    position: relative;
+    min-height: 451px;
+    width: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    flex: 0 0 33%;
+    margin-bottom: 60px;
+}
+.scroll-box-wrap::-webkit-scrollbar {
+    height: 12px;
+  }
+.scroll-box-wrap::-webkit-scrollbar-thumb,
+  .scroll-box-wrap::-webkit-scrollbar-track {
+    border-radius: 92px;
+    display: none;
+  }
+.pos-loans-img{
+    width: 240px;
+    transform: rotate(-20deg);
+    position: absolute;
+    top: auto;
+    bottom: -270px;
+    left: auto;
+    right: -50px;
+
+}
+.personal-loans-img{
+    width: 240px;
+    transform: rotate(-20deg);
+    position: absolute;
+    top: auto;
+    bottom: -270px;
+    left: auto;
+    right: -50px;
+
+}
+.scroll-box1 h1{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Inter, sans-serif;
+    margin-bottom: 20px;
+}
+.scroll-box1 p{
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.scroll-box1 button{
+    background-color: #37A477;
+    padding: 20px 25px;
+    border-radius: 10px;
+    border: none;
+}
+.scroll-box1 button a{
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+.scroll-box2 button{
+    background-color: #1E1F26;
+    padding: 20px 25px;
+    border-radius: 10px;
+    border: none;
+}
+.scroll-box3 button{
+    background-color: #336EEB;
+    padding: 20px 25px;
+    border-radius: 10px;
+    border: none;
+}
+.fairsave-loans-img{
+    width: 300px;
+    transform: rotate(-20deg);
+    position: absolute;
+    top: auto;
+    bottom: -175px;
+    left: auto;
+    right: -80px;
+}
+
+.icon-wrap{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 20px;
+}
+.icon-content{
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-solid{
+    font-size: 16px;
+    font-weight: 200;
+}
+
+
+@media(max-width:1372px){
+    .scroll-box-wrapper{
+        padding: 0px 0px;
+        background-color: white;
+    }
+    .scroll-box-container{
+        background-color: #EBF1FD;
+        padding: 100px 0px;
+    }
+    .scroll-box1{
+        padding: 50px 40px;
+        position: relative;
+        min-height: 451px;
+        width: 450px;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: white;
+        flex: 0 0 39%;
+        margin-bottom: 60px;
+    }
+    
+}
+@media(max-width:1037px){
+    .scroll-box1{
+        padding: 50px 40px;
+        position: relative;
+        min-height: 451px;
+        width: 450px;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: white;
+        flex: 0 0 48%;
+        margin-bottom: 60px;
+    }
+    
+}
+@media(max-width:990px){
+    .scroll-box1{
+        padding: 50px 40px;
+        position: relative;
+        min-height: 451px;
+        width: 450px;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: white;
+        flex: 0 0 39%;
+        margin-bottom: 60px;
+    }
+    .scroll-box-container{
+        background-color: #EBF1FD;
+        padding: 100px 30px;
+        padding-right: 0px;
+    }
+    .personal-loans-img{
+        width: 230px;
+        transform: rotate(-20deg);
+        position: absolute;
+        top: auto;
+        bottom: -270px;
+        left: auto;
+        right: -50px;
+    }
+    .pos-loans-img{
+        width: 225px;
+        transform: rotate(-20deg);
+        position: absolute;
+        top: auto;
+        bottom: -270px;
+        left: auto;
+        right: -50px;
+    
+    }
+    
+}
+@media(max-width:900px){
+    .personal-loans-img{
+        width: 220px;
+        transform: rotate(-20deg);
+        position: absolute;
+        top: auto;
+        bottom: -270px;
+        left: auto;
+        right: -50px;
+    }
+    .pos-loans-img{
+        width: 210px;
+        transform: rotate(-20deg);
+        position: absolute;
+        top: auto;
+        bottom: -270px;
+        left: auto;
+        right: -50px;
+    
+    }
+}
+@media(max-width:842px){
+    .scroll-box1{
+        padding: 50px 40px;
+        position: relative;
+        min-height: 451px;
+        width: 450px;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: white;
+        flex: 0 0 48%;
+        margin-bottom: 60px;
+    }
+    .personal-loans-img{
+        width: 210px;
+        transform: rotate(-20deg);
+        position: absolute;
+        top: auto;
+        bottom: -270px;
+        left: auto;
+        right: -50px;
+    }
+    .pos-loans-img{
+        width: 200px;
+        transform: rotate(-20deg);
+        position: absolute;
+        top: auto;
+        bottom: -270px;
+        left: auto;
+        right: -50px;
+    
+    }
+    
+}
+
+@media(max-width:700px){
+    .scroll-box1{
+        padding: 50px 40px;
+        position: relative;
+        min-height: 430px;
+        width: 450px;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: white;
+        flex: 0 0 79%;
+        margin-bottom: 60px;
+    }
+    .personal-loans-img{
+        width: 210px;
+        transform: rotate(-20deg);
+        position: absolute;
+        top: auto;
+        bottom: -270px;
+        left: auto;
+        right: -50px;
+    }
+    .pos-loans-img{
+        width: 200px;
+        transform: rotate(-20deg);
+        position: absolute;
+        top: auto;
+        bottom: -270px;
+        left: auto;
+        right: -50px;
+    
+    }
+
+    .scroll-box-header{
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        margin: 0px;
+        font-family: Inter, sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 90px;
+    }
+
+    .scroll-box1 h1{
+        font-size: 23px;
+        font-weight: 700;
+        font-family: Inter, sans-serif;
+        margin-bottom: 10px;
+    }
+    .scroll-box1 p{
+        font-family: Inter, sans-serif;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    .scroll-box1 button{
+        background-color: #37A477;
+        padding: 12px 16px;
+        border-radius: 10px;
+        border: none;
+    }
+    .scroll-box1 button a{
+        font-family: Inter, sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        color: white;
+    }
+    .scroll-box2 button{
+        background-color: #1E1F26;
+        padding: 12px 16px;
+        border-radius: 10px;
+        border: none;
+    }
+    .scroll-box3 button{
+        background-color: #336EEB;
+        padding: 12px 16px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .personal-loans-img{
+        width: 200px;
+        transform: rotate(-20deg);
+        position: absolute;
+        top: auto;
+        bottom: -200px;
+        left: auto;
+        right: -50px;
+    }
+    .pos-loans-img{
+        width: 200px;
+        transform: rotate(-20deg);
+        position: absolute;
+        top: auto;
+        bottom: -220px;
+        left: auto;
+        right: -50px;
+    
+    }
+}
+
+@media(max-width:384px){
+    .scroll-box1{
+        padding: 50px 40px;
+        position: relative;
+        min-height: 430px;
+        width: 450px;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: white;
+        flex: 0 0 95%;
+        margin-bottom: 60px;
+    }
+}
+
+.wrap{
+    background-color: red;
+    position: relative;
+}
+.wrap-content{
+    background-color: #F6F9FF;
+    border-radius: 20px;
+    padding: 40px 37px;
+    width: 85%;
+    z-index: 1;
+    position: absolute;
+    top: auto;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    transform: translate(0, 50%);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    gap: 1em;
+}
+.wrap-content h1{
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+.wrap-content button{
+    background-color: #37A477;
+    border: none;
+    padding: 19px 18px;
+    border-radius: 10px;
+}
+.wrap-content button a{
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+@media(max-width:1057px){
+    .wrap-content h1{
+        font-family: Inter, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .wrap-content button{
+        background-color: #37A477;
+        border: none;
+        padding: 18px 17px;
+        border-radius: 10px;
+    }
+    .wrap-content button a{
+        font-family: Inter, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        color: white;
+    }
+}
+
+@media(max-width:918px){
+    .wrap-content{
+        flex-direction: column;
+        padding: 40px 35px;
+    }
+
+    .wrap-content h1{
+        font-family: Inter, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+
+@media(max-width:437px){
+    .wrap-content h1{
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+    }
 }
