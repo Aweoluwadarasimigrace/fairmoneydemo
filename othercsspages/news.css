@@ -36,6 +36,10 @@ header {
 .menu-list-wrap {
     display: flex;
     gap: 1.4em;
+    
+}
+.menu-list-wrap li{
+    list-style-type: none;
 }
 .menu-list-wrap li a{
     text-decoration: none;
