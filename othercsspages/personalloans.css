@@ -2121,10 +2121,280 @@ header {
 }
 
 
+.fairmoney-loan{
+    background-color: #f1f2f9;
+    margin-top: -150px;
+    margin-bottom: 66px;
+    padding-top: 150px;
+    padding-bottom: 110px;
+
+}
+.loan-wrap{
+    max-width: 1054px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.loan-wrapper{
+    display: flex;
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.loan-container{
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    display: flex;
+}
+
+.loan-box{
+    background-color: #fff;
+    border-radius: 20px;
+    background-image: url(../images/phone-timer1.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding-top: 33px;
+    padding-bottom: 27px;
+    display: flex;
+    justify-content: center;
+}
+.loan-box p{
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    max-width: 350px;
+}
+.loan-text{
+    flex: 1;
+}
+
+.textt-box{
+    background-color: #E0E6F8;
+    border-radius: 28.5px;
+    padding: 19px 25px;
+    display: inline-block;
+}
+.textt-box p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.loan-text h1{
+    max-width: 427px;
+    margin-top: 18px;
+    margin-bottom: 38px;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.spann{
+    color: #37A477;
+}
+
+.loan-list{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+.loan-list li strong{
+    max-width: 400px;
+    margin-bottom: 28px;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 700;
+}
+.loan-list li{
+    max-width: 400px;
+    margin-bottom: 28px;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+}
+
+@media(max-width:1024px){
+
+    .fairmoney-loan{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .loan-text h1{
+        max-width: 427px;
+        margin-top: 18px;
+        margin-bottom: 38px;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    .loan-list li strong{
+        max-width: 400px;
+        margin-bottom: 28px;
+        font-family: Inter, sans-serif;
+        font-size: 17px;
+        line-height: 27px;
+        font-weight: 700;
+    }
+    .loan-list li{
+        max-width: 400px;
+        margin-bottom: 28px;
+        font-family: Inter, sans-serif;
+        font-size: 17px;
+        line-height: 27px;
+        font-weight: 400;
+    }
+    .loan-wrapper{
+        grid-column-gap: 30px;
+       grid-row-gap: 30px;
+
+    }
+    
+    .loan-box{
+        background-size: 32px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .loan-box p{
+        font-family: Inter, sans-serif;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 30px;
+        max-width: 350px;
+    }
+}
+
+
+@media(max-width:767px){
+
+    .loan-box{
+        background-size: 32px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .loan-wrapper{
+        display: flex;
+        grid-column-gap: 60px;
+        grid-row-gap: 60px;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .fairmoney-loan{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .loan-box{
+        background-color: #fff;
+        border-radius: 20px;
+        background-image: url(../images/phone-timer1.svg);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        padding-top: 39px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: start;
+        max-width: 100%;
+    }
+    .loan-box p{
+        font-family: Inter, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        max-width: none;
+    }
+}
 
 
 
+@media(max-width:558px){
+    .fairmoney-loan{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
+    .loan-box p{
+        font-family: Inter, sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+        max-width: none;
+    }
+    .loan-box{
+        background-color: #fff;
+        border-radius: 20px;
+        background-image: url(../images/phone-timer1.svg);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        padding-top: 35px;
+        padding-bottom: 28px;
+        display: flex;
+        justify-content: start;
+        max-width: 100%;
+    }
+
+    .loan-text h1{
+        max-width: 427px;
+        margin-top: 18px;
+        margin-bottom: 30px;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+}
+
+
+
+.calculator-section{
+    padding: 150px;
+    background-color: red;
+}
+.calculator-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calculatorr-box{
+    border-radius: 20px;
+    background-color: purple;
+    width: 95%;
+    max-width: 1275px;
+    grid-column-gap: 8.4vw;
+    grid-row-gap: 8.4vw;
+    background-image: url(../images/floating-element-left.svg), url(../images/imageedeg1.svg);
+    background-position: 100% 70%, 0 0;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 3%, 10%;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 146px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 87px 87px 87px 8.6vw;
+    display: flex;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+.calculator-count{
+    width: 50%;
+    max-width: 538px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    flex: none;
+    padding-top: 50px;
+    background-color: white;
+}
 footer {
     background-color: #171D32;
     padding: 70px 50px;
