@@ -1462,6 +1462,22 @@ margin-bottom: 10px;
     border-radius: 10px;
     border: none;
 }
+
+.scroll-box1 button:hover{
+    animation-name: buttonup;
+    animation-duration: 3s;
+    animation-delay: -2s;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes buttonup{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-6px);
+    }
+}
 .scroll-box1 button a{
     font-family: Inter, sans-serif;
     font-size: 16px;
