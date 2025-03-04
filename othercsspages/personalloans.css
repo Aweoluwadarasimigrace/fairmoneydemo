@@ -2479,6 +2479,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
+    gap: 1em;
 
 }
 
@@ -2491,8 +2492,7 @@ header {
 
 
 .input{
-    max-width: 250px;
-    padding-right: 200px;
+    padding-right: 80px;
     border: none;
     padding-left: 10px;
     padding-top: 17px;
@@ -2501,6 +2501,9 @@ header {
     border-radius: 5px;
 }
 
+.range-input{
+    margin-bottom: 25px;
+}
 .range-flex{
     display: flex;
     justify-content: space-between;
@@ -2526,6 +2529,270 @@ header {
     height: 22px;
     background-color: #37A477;
     border-radius: 50%;
+}
+.duration-range{
+    margin-bottom: 25px;
+}
+
+.duration-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    position: relative;
+    gap: 1em;
+}
+
+.duration-input p{
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #404B65;
+}
+
+.month-number{
+    padding-right: 68px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: #eee;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+    color: #afafaf;
+}
+.input-flex{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: auto;
+    right: 0%;
+    overflow: hidden;
+}
+.input-flex p{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.input-box1{
+    cursor: pointer;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    background-color: #37A477;
+
+}
+
+.input-box2{
+    cursor: pointer;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    background-color: #eee;
+}
+
+.input-box2 p{
+    color: #afafaf;
+}
+
+.interest-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    position: relative;
+    gap: 1em;
+}
+
+.interest-input p{
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #404B65;
+}
+.interest{
+    padding-right: 68px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: #eee;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+    color: #afafaf;
+}
+
+.interet-range{
+    margin-bottom: 35px;
+}
+
+@media(max-width:1094px){
+    .loan-input p{
+        font-family: Inter, sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        color: #404B65;
+     }
+
+     .interest-input p{
+    font-family: Inter, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #404B65;
+}
+.interest{
+    padding-right: 60px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 10px;
+}
+
+.duration-input p{
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #404B65;
+}
+
+.month-number{
+    padding-right: 60px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 10px;
+}
+.input-flex p{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+.input-box2 p{
+    color: #afafaf;
+}
+.input{
+    padding-right: 70px;
+}
+
+}
+
+
+
+
+@media(max-width:1024px){
+    .calculator-text h1{
+        font-family: Inter, sans-serif;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 49px;
+        color: #1E1F26;
+        margin-bottom: 40px;
+        max-width: 475px;
+    }
+    
+    .calculator-text p{
+        font-family: Inter, sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #404B65;
+        margin-bottom: 50px;
+    }
+    
+    .calculator-text button{
+        border: none;
+        border-radius: 10px;
+        background-color: #1E1F26;
+        padding: 17px 30px;
+    }
+
+    .calculator-text button a{
+        font-family: Inter, sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        color: #fff;
+}
+
+.calculator-count{
+    width: 50%;
+    max-width: 538px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    flex: none;
+    padding-top: 30px;
+    background-color: white;
+    padding-right: 20px;
+}
+
+.calculatorr-box{
+    padding: 67px 60px 80px 8.6vw;
+}
+
+
+
+.month-number{
+    padding-right: 20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 10px;
+}
+
+.interest{
+    padding-right: 10px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 10px;
+}
+
+.input{
+    padding-right: 40px;
+}
+
+}
+
+@media(max-width:767px){
+    .calculatorr-box{
+       
+        width: 95%;
+        max-width: 1275px;
+        grid-column-gap: 8.4vw;
+        grid-row-gap: 8.4vw;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    .calculator-count{
+        width: 100%;
+        max-width: none;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        flex: none;
+        padding-top: 50px;
+        background-color: white;
+    }
+    .calculator-wrap{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    .input{
+        width: 70%;
+    }
+    
+    .interest{
+       width: 70%;
+    }
+    
 }
 
 
